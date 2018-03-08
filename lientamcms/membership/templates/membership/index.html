@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng Ký</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+
+  {% load static %}
+  <link rel="stylesheet" href={% static 'membership/style.css'}>
+
+</head>
+
+<body class="black-skin">
+  <!--Main Navigation-->
+<header>
+  <!--Intro Section-->
+  <section class="view intro-2 custom-gradient">
+      <div class="full-bg-img">
+          <div class="container flex-center">
+              <div class="d-flex align-items-center content-height">
+                  <div class="row flex-center pt-5 mt-3">
+                      <div class="col-md-6 text-center text-md-left mb-5">
+                          <div class="white-text">
+                              <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Welcome </h1>
+                              <hr class="hr-light mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+                              <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
+                                  dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae,
+                                  quisquam iste, maiores. Nulla.</h6>
+                              <br>
+
+                                <button type="button" class="btn btn-amber" data-toggle="modal" data-target="#modalDefaultContactForm">
+                                  Đăng Ký
+                                </button>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+</header>
+<!--Main Navigation-->
+  <div class="modal fade" id="modalDefaultContactForm" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--Modal: Contact form-->
+    <div class="modal-dialog cascading-modal" role="document">
+
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Header-->
+        <div class="modal-header warning-color-dark white-text">
+          <h4 class="title">
+            <i class="fa fa-pencil"></i>ĐĂNG KÝ</h4>
+          <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body needs-validation" novalidate>
+
+          <!-- Grid row -->
+          <div class="form-row">
+            <!-- Grid column -->
+            <div class="col">
+              <!-- Default input name -->
+              <label for="defaultFormNameModalEx">Họ tên</label>
+              <input type="text" id="defaultFormNameModalEx" class="form-control form-control-sm" required>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col">
+              <label for="defaultFormNickNameModalEx">Pháp Danh</label>
+              <input type="text" length="30" id="defaultFormNickNameModalEx" class="form-control form-control-sm">
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+
+          <br>
+
+          <!-- Grid row -->
+          <div class="form-row">
+            <!-- Grid column -->
+            <div class="col">
+              <!-- Default input bday -->
+              <label for="defaultFormBithDModalEx">Ngày Sinh</label>
+              <input type="date" id="defaultFormBirthDModalEx" class="form-control form-control-sm" required>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col">
+              <!-- Default input ID -->
+              <label for="defaultFormIDModalEx">Số ID</label>
+              <input type="text" id="defaultFormIDModalEx" length="12" class="form-control form-control-sm" required>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+
+          <br>
+          <label for="defaultFormPassModalEx">Password</label>
+<input type="password" id="defaultFormPassModalEx" length="50" class="form-control form-control-sm" required>
+
+                 <!-- Grid row -->
+                 <div class="form-row">
+                    <!-- Grid column -->
+                    <div class="col">
+                       <!-- Default input subject -->
+                <label for="defaultFormSubjectModalEx">Nghề Nghiệp</label>
+                <input type="text" id="defaultFormSubjectModalEx" class="form-control form-control-sm">
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col">
+                      <!-- Default Nationality subject -->
+                <label for="defaultFormNationalityModalEx">Quốc Tịch</label>
+                <input type="text" id="defaultFormNationalityModalEx" class="form-control form-control-sm">
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!-- Grid row -->
+
+                  <br>
+
+                  <label>Giới Tính</label>
+                  <select class="form-control mdb-select colorful-select dropdown-primary" required>
+                      <option value="Nu">Nữ</option>
+                      <option value="Nam">Nam</option>
+                      <option value="Khac">Khác</option>
+                  </select>
+                  <br>
+
+          <!-- Default input email -->
+          <label for="defaultFormRegisterEmailEx">Email</label>
+          <input type="email" id="defaultFormRegisterEmailEx" class="form-control orm-control-sm" required>
+
+          <br>
+
+          <!-- Default input address -->
+          <label for="defaultFormAddressModalEx">Địa chỉ</label>
+          <input type="text" id="defaultFormAddressModalEx" class="form-control form-control-sm">
+
+          <br>
+
+          <!-- Default input phone -->
+          <label for="defaultFormPhoneModalEx">SĐT</label>
+          <input type="number" id="defaultFormPhoneModalEx" class="form-control form-control-sm">
+
+          <br>
+
+
+
+          <!-- Default textarea message -->
+          <label for="defaultFormMessageModalEx">Ghi Chú</label>
+          <textarea type="text" id="defaultFormMessageModalEx" class="md-textarea form-control"></textarea>
+
+          <div class="text-center mt-4 mb-2">
+            <button type="submit" class="btn btn-amber">Gửi
+              <i class="fa fa-send ml-2"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+    <!--/Modal: Contact form-->
+  </div>
+
+
+
+</body>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
+</html>
