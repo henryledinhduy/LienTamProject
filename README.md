@@ -1,5 +1,6 @@
 To enable env:
 $ . venv/bin/activate
+
 To deactivate env:
 $ deactivate
 
