@@ -9,6 +9,8 @@ name = "pypi"
 
 django = "*"
 django-money = "*"
+django-heroku = "*"
+whitenoise = "*"
 
 
 [dev-packages]
