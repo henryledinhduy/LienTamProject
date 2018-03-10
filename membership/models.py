@@ -1,6 +1,8 @@
 from django.db import models
 from djmoney.models.fields import MoneyField
 
+# Phan nay anh dang lam chua xong, 
+
 class People(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=50)
