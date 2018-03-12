@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import People, Donation
+from .models import UserProfile, Donation
 
-admin.site.register(People)
+admin.site.register(UserProfile)
 admin.site.register(Donation)
-#admin.site.register(Contact)

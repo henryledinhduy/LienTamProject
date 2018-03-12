@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+  <h1> Dang Ki Thanh Vien </h1>
+  <form method="post">
+    {% for field in form %}
+    {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+    {% endfor %}
+    {% endfor %}
+    <div class="field">
+      <label for="id_username"> Ten dang nhap: </label>
+      {{ form.username }}
+    </div>
+    <div class="field">
+      {{ form.}}
+    <div class="field">
+      <label for="id_email"> Dia chi Email: </label>
+      {{ form.email }}
+    </div>
+      <div class="field">
+      <label for="id_first_name"> Ten: </label>
+      {{ form.first_name }}
+    </div>
+      <div class="field">
+      <label for="id_last_name"> Ho va chu lot: </label>
+      {{ form.last_name }}
+    </div>
+    <div class="field">
+      <label for="id_password1"> Mat khau: </label>
+      {{ form.password1 }}
+    </div>
+    <div class="field">
+      <label for="id_password2"> Nhap lai Mat khau: </label>
+      {{ form.password2 }}
+    </div>
+    {% csrf_token %}
+    <button type="submit"> Dang ki </button>
+  </form>
+</div>
+{% endblock %}

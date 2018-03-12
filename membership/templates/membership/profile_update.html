@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+  <form method="post">
+    {% for field in form %}
+    {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+    {% endfor %}
+    {% endfor %}
+    <h1> {{ id }} </h1>
+
+    <div class="field">
+      <label for="id_social_number"> So xa hoi: </label>
+      {{ form.social_number }}
+    </div>
+    <div class="field">
+      <label for="id_gender"> Gioi tinh: </label>
+      {{ form.gender }}
+    </div>
+    <div class="field">
+      <label for="id_profession"> Nghe nghiep: </label>
+      {{ form.profession }}
+    </div>
+    <div class="field">
+      <label for="id_address"> Dia chi: </label>
+      {{ form.address }}
+    </div>
+    <div class="field">
+      <label for="id_postal_code"> Postal: </label>
+      {{ form.postal_code }}
+    </div>
+    <div class="field">
+      <label for="id_city"> Thanh Pho: </label>
+      {{ form.city }}
+    </div>
+
+    {% csrf_token %}
+    <button type="submit">Update</button>
+  </form>
+</div>
+
+{% endblock %}

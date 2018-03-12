@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# djmoney here to ensure that the money field are displayed correctly in the admin
 INSTALLED_APPS = [
     'membership.apps.MembershipConfig',
     'django.contrib.admin',
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djmoney'
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# redirect the login page
+LOGIN_REDIRECT_URL = '/membership/profile/'
 
 # Configure Django App for Heroku.
 import django_heroku
