@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # redirect the login page
-LOGIN_REDIRECT_URL = '/membership/profile/'
+LOGIN_REDIRECT_URL = '/membership/profile/update'
 
 # Configure Django App for Heroku.
 import django_heroku
