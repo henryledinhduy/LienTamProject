@@ -12,6 +12,7 @@ django-money = "*"
 django-heroku = "*"
 whitenoise = "*"
 gunicorn = "*"
+"psycopg2" = "*"
 
 
 [dev-packages]
