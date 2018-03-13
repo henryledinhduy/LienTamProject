@@ -77,7 +77,7 @@ def some_view(request):
     new_pdf = PdfFileReader(buffer)
 
     # Read the form that need to be filled
-    form = PdfFileReader(open("/home/duyledinh/Dropbox/Apps/lientamcms/membership/memberform2.pdf", "rb"))
+    form = PdfFileReader(open("/app/membership/memberform2.pdf", "rb"))
     if form.isEncrypted:
         form.decrypt('');
 
