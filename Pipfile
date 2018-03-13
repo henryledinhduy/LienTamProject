@@ -13,6 +13,8 @@ django-heroku = "*"
 whitenoise = "*"
 gunicorn = "*"
 "psycopg2" = "*"
+reportlab = "*"
+"pypdf2" = "*"
 
 
 [dev-packages]

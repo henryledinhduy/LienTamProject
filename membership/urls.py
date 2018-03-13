@@ -7,5 +7,6 @@ urlpatterns = [
     path('login/', login, {'template_name': 'membership/login.html'}),
     path('logout/', logout, {'template_name': 'membership/logout.html'}),
     path('profile/', views.profile, name='profile'),
-    path('profile/update/', views.update_profile, name='update_profile')
+    path('profile/update/', views.update_profile, name='update_profile'),
+    path('pdf/', views.some_view, name='some_view' )
 ]
